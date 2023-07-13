@@ -10,7 +10,8 @@ namespace BasicCorePrograms
             while (flag)
             {
                 Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n 4.Factors\n" +  
-                    " 5.Quotient and Reminder\n 6.Swap two numbers\n 7.Even or Odd\n 8.Exit");
+                    " 5.Quotient and Reminder\n 6.Swap two numbers\n 7.Even or Odd\n 8.Vowel or Consonant\n" +
+                    " 9.Exit");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -43,6 +44,10 @@ namespace BasicCorePrograms
                         evenOrOdd.CheckOddOrEven();
                         break;
                     case 8:
+                        VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
+                        vowelOrConsonant.CheckVowelOrConsonant();
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
