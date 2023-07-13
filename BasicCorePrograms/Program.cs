@@ -9,9 +9,8 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n " +
-                    "4.Factors\n " +
-                    "5.Exit");
+                Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n 4.Factors\n" +  
+                    " 5.Quotient and Reminder\n 6.Exit");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -32,6 +31,10 @@ namespace BasicCorePrograms
                         factors.PrintFactors();
                         break;
                     case 5:
+                        QuotientReminder quotientReminder = new QuotientReminder();
+                        quotientReminder.PrintQuotientReminder();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
