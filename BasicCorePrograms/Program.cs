@@ -10,7 +10,7 @@ namespace BasicCorePrograms
             while (flag)
             {
                 Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n 4.Factors\n" +  
-                    " 5.Quotient and Reminder\n 6.Exit");
+                    " 5.Quotient and Reminder\n 6.Swap two numbers\n 7.Exit");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -35,6 +35,10 @@ namespace BasicCorePrograms
                         quotientReminder.PrintQuotientReminder();
                         break;
                     case 6:
+                        Swap swap = new Swap();
+                        swap.SwapTwoNumbers();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
