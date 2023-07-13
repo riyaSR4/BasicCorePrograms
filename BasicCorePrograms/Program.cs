@@ -11,7 +11,7 @@ namespace BasicCorePrograms
             {
                 Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n 4.Factors\n" +  
                     " 5.Quotient and Reminder\n 6.Swap two numbers\n 7.Even or Odd\n 8.Vowel or Consonant\n" +
-                    " 9.Exit");
+                    " 9.Largest Among Three numbers\n 10.Exit");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -47,7 +47,11 @@ namespace BasicCorePrograms
                         VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
                         vowelOrConsonant.CheckVowelOrConsonant();
                         break;
-                    case 9:
+                     case 9:
+                        LargestAmongThree largestAmongThree = new LargestAmongThree();
+                        largestAmongThree.FindLargestAmongThree();
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
