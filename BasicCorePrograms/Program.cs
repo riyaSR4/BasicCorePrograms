@@ -9,7 +9,8 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n 4.Exit");
+                Console.WriteLine("Enter input to be executed\n 1.Flip Coin\n 2.Leap Year\n 3.Power of 2\n 4.Harmonic Number\n " +
+                    "5.Exit");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -26,6 +27,10 @@ namespace BasicCorePrograms
                         powerOf2.PrintPowerOf2();
                         break;
                     case 4:
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
+                        harmonicNumber.PrintHarmonicNumber();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
